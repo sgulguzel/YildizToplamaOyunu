@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yıldız Toplayıcı Oyun</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Giriş Sayfası -->
+    <div id="welcome-screen">
+        <div class="background"></div>
+        <button id="start-button">Oyuna Başla</button>
+    </div>
+
+    <!-- Oyun Alanı -->
+    <div id="game-container" style="display: none;">
+        <div id="paddle"></div>
+        <div id="ball"></div>
+        <div id="score-board">
+            <p id="timer">Süre: 0</p>
+            <p id="score">Puan: 0</p>
+            <p id="lives">Can: 3</p>
+        </div>
+        <!-- Sağ köşede duraklatma butonu -->
+        <button id="pause-button">Duraklat</button>
+        <!-- Bonus yıldız ve can paketi -->
+        <div id="bonus-star" class="bonus"></div>
+        <div id="life-pack" class="bonus"></div>
+    </div>
+
+    <!-- Duraklatma Menüsü -->
+    <div id="pause-menu" style="display: none;">
+        <button id="resume">Devam Et</button>
+        <button id="restart">Yeniden Başlat</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
